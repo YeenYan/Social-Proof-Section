@@ -1,0 +1,105 @@
+@media (min-width: 1000px) {
+    
+    body {
+        background-image: url('/images/bg-pattern-top-desktop.svg'), url('/images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: 0 , 30rem;
+        background-position-y: 0 , 5rem;
+    }
+
+    .main {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+
+    .card__col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__section {
+        width: 45%;
+        margin: 0;
+        text-align: left;
+
+        &-title {
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+
+        &-text {
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+    }
+
+    .aside {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        max-width: 540px;
+
+        &__rate{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 460px;
+            margin: 0;
+        }
+
+        &__rate:nth-child(2) {
+            align-self: center;
+        }
+
+        &__rate:nth-child(3){
+            align-self: flex-end;
+        }
+
+        &__rate-stars {
+            display: inline-block;
+            margin: 0 2rem;
+    
+            &-icon + &-icon {
+                margin-left: .3rem;
+            }
+        }
+        &__rate-type {
+            margin: 0;
+        }
+    }
+
+    .tes__section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        height: 250px;
+
+        .col + .col {
+            margin-left: 2rem;
+        }
+
+        .col {
+            flex: 1;
+            flex-basis: 31%;
+            margin: 0;
+        }
+
+        .col:nth-child(1){
+            align-self: flex-start;
+        }
+
+        .col:nth-child(2){
+            align-self: center;
+        }
+
+        .col:nth-child(3){
+            align-self: flex-end;
+        }
+    }
+}

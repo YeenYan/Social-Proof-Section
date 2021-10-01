@@ -1,0 +1,33 @@
+img {
+    max-width: 100%;
+}
+
+.col {
+    padding: 2.5em;
+    border-radius: 10px;
+    // max-width: 370px;
+
+    &+& {
+        margin-top: 1rem;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__content-info {
+        margin-left: 1.5rem;
+    }
+
+    &__content-type {
+        margin-top: .3rem;
+    }
+
+    &__content-image {
+        height: 40px;
+        width: 40px;
+        border-radius: 100px;
+    }
+}
