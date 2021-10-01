@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.9rem;
+}
+
+.header__section {
+  text-align: center;
+}
+.header__section-title {
+  font-size: clamp(2rem, 5vw + 1rem, 2.8rem);
+  font-weight: 700;
+  line-height: 1;
+}
+.header__section-text {
+  font-size: clamp(0.9rem, 2vw + 1rem, 1rem);
+  line-height: 1.6;
+}
+
+.aside__rate {
+  text-align: center;
+}
+.aside__rate-type {
+  font-weight: 700;
+}
+
+.col__content-name {
+  font-weight: 500;
+}
+.col__content-type {
+  font-size: 0.9rem;
+}
+.col__text {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.attribution__mentor, .attribution__myname {
+  text-decoration: none;
+}
+
+.header__section-title, .header__section-text {
+  color: #502050;
+}
+
+.aside__rate {
+  background-color: #f7f2f7;
+}
+.aside__rate-type {
+  color: #502050;
+}
+
+.col {
+  background-color: #502050;
+  color: #f7f2f7;
+}
+.col__content-type {
+  color: #ee68a4;
+}
+
+.attribution {
+  color: #937b92;
+}
+.attribution__mentor, .attribution__myname {
+  color: #937b92;
+}
+
+img {
+  max-width: 100%;
+}
+
+.col {
+  padding: 2.5em;
+  border-radius: 10px;
+}
+.col + .col {
+  margin-top: 1rem;
+}
+.col__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.col__content-info {
+  margin-left: 1.5rem;
+}
+.col__content-type {
+  margin-top: 0.3rem;
+}
+.col__content-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+body {
+  background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+}
+
+.main {
+  margin: 5rem 0;
+}
+
+.card {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__section-title {
+  width: 75%;
+  margin: 1em auto;
+}
+.header__section-text {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 2rem 0;
+}
+
+.aside__rate {
+  padding: 1rem 0;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.aside__rate + .aside__rate {
+  margin-top: 1rem;
+}
+.aside__rate-stars {
+  display: flex;
+  justify-content: center;
+}
+.aside__rate-stars-icon + .aside__rate-stars-icon {
+  margin-left: 0.7rem;
+}
+.aside__rate-type {
+  margin-top: 0.7rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 0, 30rem;
+    background-position-y: 0, 5rem;
+  }
+
+  .main {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .card__col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__section {
+    width: 45%;
+    margin: 0;
+    text-align: left;
+  }
+  .header__section-title {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .header__section-text {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 540px;
+  }
+  .aside__rate {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 460px;
+    margin: 0;
+  }
+  .aside__rate:nth-child(2) {
+    align-self: center;
+  }
+  .aside__rate:nth-child(3) {
+    align-self: flex-end;
+  }
+  .aside__rate-stars {
+    display: inline-block;
+    margin: 0 2rem;
+  }
+  .aside__rate-stars-icon + .aside__rate-stars-icon {
+    margin-left: 0.3rem;
+  }
+  .aside__rate-type {
+    margin: 0;
+  }
+
+  .tes__section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    height: 250px;
+  }
+  .tes__section .col + .col {
+    margin-left: 2rem;
+  }
+  .tes__section .col {
+    flex: 1;
+    flex-basis: 31%;
+    margin: 0;
+  }
+  .tes__section .col:nth-child(1) {
+    align-self: flex-start;
+  }
+  .tes__section .col:nth-child(2) {
+    align-self: center;
+  }
+  .tes__section .col:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
