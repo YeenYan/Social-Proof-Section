@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: .9rem;
+}
+
+.header__section {
+    text-align: center;
+
+        &-title {
+            font-size: clamp(2rem, 5vw + 1rem, 2.8rem);
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        &-text {
+            font-size: clamp(.9rem, 2vw + 1rem, 1rem);
+            line-height: 1.6;
+        }
+
+}
+
+.aside__rate {
+    text-align: center;
+
+    &-type {
+        font-weight: 700;
+    }
+}
+
+.col {
+
+    &__content-name {
+        font-weight: 500;
+    }
+
+    &__content-type {
+        font-size: .9rem;
+    }
+
+    &__text {
+        font-size: .8rem;
+        line-height: 1.7;
+    }
+
+}
+
+.attribution {
+
+    &__mentor ,
+    &__myname {
+        text-decoration: none;
+    }
+
+}
